@@ -1,0 +1,267 @@
+.categorias {
+  margin-top: 220px;
+}
+.categorias h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  color: #2c2b2b;
+  margin-left: 180px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.cards h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  color: #2c2b2b;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: 0.2s;
+}
+
+.cards a {
+  text-decoration: none;
+}
+.cards div:nth-child(4) {
+  margin: 0px 70px;
+}
+.cards div img {
+  border-radius: 0px 0px 5px 5px;
+  border-top: 3px solid #771f07ef;
+  width: 100%;
+}
+.retangulo {
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background: linear-gradient(180deg, #9c4126 0%, #772007 100%);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: 5px;
+  transition: 0.2s;
+}
+
+.cards p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  color: #595959;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 22px;
+  margin-top: 10px;
+  transition: 0.4s ease;
+}
+
+.cards p:hover {
+  transform: scale(1.02);
+}
+
+.cards p:hover > .arrow {
+  transform: rotate(180deg);
+  transition: 0.3s;
+  top: 7px;
+}
+
+.arrow {
+  display: inline-block;
+  transform: rotate(-90deg);
+  position: relative;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.arrow::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  transform: rotate(45deg);
+  background: linear-gradient(180deg, #9c4126 0%, #772007 100%);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+.arrow::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  transform: rotate(-45deg);
+  background: linear-gradient(180deg, #9c4126 0%, #772007 100%);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  right: 4px;
+}
+
+.teste-1:hover .retangulo {
+  transform: scaleX(1.5);
+  transform-origin: left;
+  transition: 0.2s;
+}
+
+.teste-1:hover h4 {
+  transform: translateX(9px);
+  transition: 0.2s;
+}
+
+@media (max-width: 1570px) {
+  .cards div img {
+    width: 100%;
+  }
+  .cards div {
+    width: 400px;
+  }
+  .cards div:nth-child(4) {
+    margin: 0px 40px;
+  }
+}
+@media (max-width: 1450px) {
+  .categorias {
+    margin-top: 200px;
+  }
+
+  .categorias h2 {
+    font-size: 64px;
+    margin-left: 140px;
+  }
+}
+@media (max-width: 1320px) {
+  .categorias h2 {
+    font-size: 64px;
+    margin-left: 120px;
+  }
+
+  .cards div:nth-child(4) {
+    margin: 0px 60px;
+  }
+
+  .cards {
+    justify-content: left;
+    padding-left: 60px;
+    padding-right: 60px;
+    overflow-x: scroll;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cards div {
+    width: 350px;
+  }
+
+  .categorias h2 {
+    font-size: 55px;
+    margin-left: 90px;
+  }
+
+  .cards {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .cards div {
+    width: 320px;
+  }
+  .categorias {
+    margin-top: 19%;
+  }
+}
+
+@media (max-width: 800px) {
+  .cards div {
+    width: 320px;
+  }
+
+  .categorias {
+    margin-top: 17%;
+  }
+  .categorias h2 {
+    font-size: 55px;
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards div {
+    width: 300px;
+  }
+
+  .categorias h2 {
+    font-size: 45px;
+    margin-left: 40px;
+  }
+  .cards {
+    justify-content: left;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 435px) {
+  .categorias h2 {
+    font-size: 40px;
+    margin-left: 30px;
+  }
+
+  .cards div {
+    width: 300px;
+  }
+
+  .cards div:nth-child(4) {
+    margin: 0px 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cards div {
+    width: 260px;
+  }
+
+  .cards {
+    justify-content: left;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .cards div:nth-child(4) {
+    margin: 0px 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  .cards {
+    margin-top: 15px;
+  }
+
+  @media (max-width: 360px) {
+    .categorias h2 {
+      font-size: 35px;
+      margin-left: 20px;
+    }
+
+    .cards div {
+      width: 240px;
+    }
+
+    .cards {
+      justify-content: left;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .cards div:nth-child(4) {
+      margin: 0px 50px;
+    }
+  }
+}
